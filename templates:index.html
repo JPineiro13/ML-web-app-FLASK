@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <title>Predicción de estación</title>
+</head>
+<body>
+    <h1>Predicción de estación</h1>
+    <form method="POST">
+        <label>Temperatura:</label><input name="temp"><br>
+        <label>Humedad:</label><input name="humidity"><br>
+        <label>Viento:</label><input name="wind"><br>
+        <label>Presión:</label><input name="pressure"><br>
+        <button type="submit">Predecir</button>
+    </form>
+    {% if prediction %}
+        <h2>Estación predicha: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
